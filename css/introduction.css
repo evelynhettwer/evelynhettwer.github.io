@@ -1,0 +1,117 @@
+.bg-intro{
+  background-color: #D1CAB3;
+  padding-bottom: 12rem;
+
+}
+
+
+.introduction {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  gap: 100px;
+}
+
+.introduction img {
+  max-width: 100%;
+  height: auto;
+}
+
+.introduction h1 {
+  font-family: "roboto", "fira sans", "arial", sans serif;
+  font-size: 6.25rem;
+  line-height: 6.25rem;
+  color: #1c1912;
+}
+
+.main-description {
+  padding-top: 2.5rem;
+  font-family: "fira sans condensed", "fira sans", "arial", sans serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #1c1912;
+  max-width: 50ch;
+}
+
+.main-p-color {
+  color: #585e85;
+  font-weight: 500;
+}
+
+.main-column {
+  padding-left: 0rem;
+}
+.main-column p {
+  margin-left: 0rem;
+}
+
+@media (max-width: 1100px) {
+  .vector {
+    width: 70%;
+    height: auto;
+    justify-self: center;
+  }
+
+  .introduction {
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+
+  .main-column {
+    padding-left: 0rem;
+    margin-left: 0rem;
+    padding-right: 3rem;
+  }
+
+  .main-column h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  .main-column p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .vector {
+    max-width: 100%;
+    height: auto;
+    align-self: center;
+  }
+  .main-column {
+    padding-left: 0rem;
+    margin-left: 0rem;
+    padding-right: 3rem;
+  }
+  .main-column h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  .main-column p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media (max-width: 830px) {
+  .introduction {
+    /* Ajustes para garantir centralização em telas menores */
+    padding: 80px 80px; /* Ajuste o padding conforme necessário */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Isso centraliza os filhos horizontalmente */
+    text-align: center; /* Centraliza o texto dentro dos blocos */
+    padding-bottom: 1.5rem;
+}
+
+.introduction img {
+  display: none;
+}
+.main-column {
+  padding-left: 0rem;
+  margin-left: 0rem;
+  padding-right: 0rem;
+}
